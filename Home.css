@@ -1,0 +1,14 @@
+/* A little bit of custom CSS for scrollbar to match the theme */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #14B8A6; /* teal-500 */
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0D9488; /* teal-600 */
+}

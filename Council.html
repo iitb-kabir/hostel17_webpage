@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hostel 17 Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body class="bg-[#f8fafc] font-sans text-gray-800">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-lg shadow-gray-100/50 border-b border-gray-200/80">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                
+                <div class="flex items-center space-x-2">
+                    <a href="Home.html" class="flex items-center space-x-2 group">
+                        <div class="bg-teal-600 text-white w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg group-hover:bg-teal-700 transition-colors duration-200">
+                            <img src="assets/LOGO_17.png" class="w-8 h-8 object-cover rounded-md" alt="Hostel 17 Logo">
+                        </div>
+                        <span class="font-extrabold text-xl tracking-tight text-gray-900">Hostel-17</span>
+                    </a>
+                </div>
+                
+                <nav class="hidden lg:flex items-center space-x-1" id="desktop-nav">
+                    <a href="Home.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Home">Home</a>
+                    <a href="Council.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Council">Council</a>
+                    <a href="sports.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="sports">Sports</a>
+                    <a href="Cult.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Cult">Culturals</a>
+                    <a href="Mess.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Mess">Mess</a>
+                    <a href="Maint.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Maint">Maintenance</a>
+                    <a href="Sysad.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Sysad">LAN & Wifi Setup</a>
+                    <a href="Tech.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Tech">Technical</a>
+                </nav>
+
+                <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 transition-colors duration-200" aria-label="Toggle menu" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-xl border-t border-gray-100 absolute w-full left-0">
+            <div class="px-4 py-3 space-y-1">
+                <a href="Home.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Home">Home</a>
+                <a href="Council.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Council">Council</a>
+                <a href="sports.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="sports">Sports</a>
+                <a href="Cult.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Cult">Culturals</a>
+                <a href="Mess.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Mess">Mess</a>
+                <a href="Maint.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Maint">Maintenance</a>
+                <a href="Sysad.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Sysad">LAN & Wifi Setup</a>
+                <a href="Tech.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Tech">Technical</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-cover bg-center" style="background-image: url('assets/Council.JPG'); height:20rem;">
+            <div class="absolute inset-0 bg-slate-800/60"></div>
+            <div class="relative container mx-auto px-6 flex justify-between items-end h-full pb-8 text-white">
+                <div>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Student Council</h1>
+                <p class="mt-3 text-lg max-w-2xl">Meet your representatives and stay updated on meetings and initiatives.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sub Navigation -->
+        <!-- <nav class="bg-white shadow-sm sticky top-20 z-40">
+            <div id="sub-nav" class="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center space-x-2 py-2 overflow-x-auto">
+                <a href="#core" class="nav-tab px-4 py-2 text-sm rounded-md whitespace-nowrap transition-colors duration-200 bg-teal-50 text-teal-600 font-semibold">Core</a>
+                <a href="#sports" class="nav-tab px-4 py-2 text-sm rounded-md whitespace-nowrap transition-colors duration-200 text-gray-500 hover:bg-gray-100">Sports</a>
+                <a href="#culturals" class="nav-tab px-4 py-2 text-sm rounded-md whitespace-nowrap transition-colors duration-200 text-gray-500 hover:bg-gray-100">Culturals</a>
+                <a href="#mess" class="nav-tab px-4 py-2 text-sm rounded-md whitespace-nowrap transition-colors duration-200 text-gray-500 hover:bg-gray-100">Mess</a>
+                <a href="#maintenance" class="nav-tab px-4 py-2 text-sm rounded-md whitespace-nowrap transition-colors duration-200 text-gray-500 hover:bg-gray-100">Maintenance</a>
+                <a href="#tech" class="nav-tab px-4 py-2 text-sm rounded-md whitespace-nowrap transition-colors duration-200 text-gray-500 hover:bg-gray-100">Tech & LAN</a>
+            </div>
+        </nav> -->
+
+        <div class="space-y-6">
+
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/80 space-y-4">
+        <div class="flex justify-between items-center text-sm font-semibold text-gray-500">
+            <p>Warden</p><p>Head</p>
+        </div>
+
+        <div class="flex items-center space-x-5 pt-2">
+            <img src="assets/Prof._Rakesh_G._Mote.jpg"
+                class="w-20 h-20 rounded-full object-cover cursor-pointer hover:scale-105 transition js-profile-image"
+                alt="Prof. Rakesh Mote">
+
+            <div>
+                <h3 class="text-lg font-bold text-gray-900">Prof. Rakesh Mote</h3>
+                <p class="text-sm text-gray-500">Warden</p>
+
+                <div class="flex flex-wrap gap-x-6 gap-y-1 mt-2 text-sm text-gray-600">
+                    <a href="tel:+912225767529" class="flex items-center hover:text-teal-600">
+                        📞 (+91-22) 2576 7529
+                    </a>
+                    <a href="mailto:h17warden@iitb.ac.in" class="flex items-center hover:text-teal-600">
+                        ✉️ h17warden@iitb.ac.in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/80 space-y-5">
+        <div class="flex justify-between items-center"><h4 class="font-bold text-gray-700 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.653-.084-1.284-.24-1.88M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.653.084-1.284.24-1.88M12 11a3 3 0 100-6 3 3 0 000 6z" /></svg>Associate Wardens</h4><span class="bg-gray-200 text-gray-600 text-xs font-bold px-2 py-1 rounded-full">2</span></div>
+        <div class="space-y-5 divide-y divide-gray-100">
+            <div class="flex items-center space-x-5 pt-5 first:pt-0">
+                <img class="w-16 h-16 rounded-full object-cover cursor-pointer hover:scale-105 transition js-profile-image" src="assets/Prof_Avijit_Maji.png" alt="Profile photo of Prof. Avijit Maji">
+                <div class="flex-grow">
+                    <h3 class="font-bold text-gray-900">Prof. Avijit Maji</h3>
+                    <p class="text-sm text-gray-500">Associate Warden</p>
+                    <div class="flex items-center flex-wrap gap-x-6 gap-y-1 mt-2 text-sm text-gray-600">
+                        <a href="tel:+9102225767338" class="flex items-center hover:text-teal-600">
+                            📞 +91 (022) 2576 7338
+                        </a>
+                        <a href="mailto:h17assocward@iitb.ac.in" class="flex items-center hover:text-teal-600">
+                            ✉️ h17assocward@iitb.ac.in
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center space-x-5 pt-5 first:pt-0">
+                <img class="w-16 h-16 rounded-full object-cover cursor-pointer hover:scale-105 transition js-profile-image" src="assets/Prof_Nagendra_velaga.jpeg" alt="Profile photo of Nagendra Rao Velaga">
+                <div class="flex-grow">
+                    <h3 class="font-bold text-gray-900">Nagendra Rao Velaga</h3>
+                    <p class="text-sm text-gray-500">Associate Warden</p>
+                    <div class="flex items-center flex-wrap gap-x-6 gap-y-1 mt-2 text-sm text-gray-600">
+                        <a href="tel:+912225767341" class="flex items-center hover:text-teal-600">
+                            📞 +91-22-2576-7341
+                        </a>
+                        <a href="mailto:h17assocward2@iitb.ac.in" class="flex items-center hover:text-teal-600">
+                            ✉️ h17assocward2@iitb.ac.in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/80">
+        <div class="flex items-center space-x-5">
+            <img class="w-16 h-16 rounded-full object-cover cursor-pointer hover:scale-105 transition js-profile-image" src="https://picsum.photos/seed/sanjay/100/100" alt="Profile photo of Mr. Nitin Peje">
+            <div class="flex-grow">
+                <h4 class="font-bold text-gray-700">Hall Manager</h4>
+                <h3 class="font-bold text-gray-900 mt-1">Mr. Nitin Peje</h3>
+                <div class="flex items-center flex-wrap gap-x-6 gap-y-1 mt-2 text-sm text-gray-600">
+                    <a href="tel:+919876500004" class="flex items-center hover:text-teal-600">
+                        📞 +91 98765 00004
+                    </a>
+                    <a href="mailto:h17hallmagr@iitb.ac.in" class="flex items-center hover:text-teal-600">
+                        ✉️ h17hallmagr@iitb.ac.in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/80">
+        <div class="flex items-center space-x-5">
+            <img class="w-16 h-16 rounded-full object-cover cursor-pointer hover:scale-105 transition js-profile-image" src="assets/Ayush_Sharma.jpg" alt="Profile photo of Ayush Sharma">
+            <div class="flex-grow">
+                <h4 class="font-bold text-gray-700">General Secretary</h4>
+                <h3 class="font-bold text-gray-900 mt-1">Ayush Sharma</h3>
+                <div class="flex items-center flex-wrap gap-x-6 gap-y-1 mt-2 text-sm text-gray-600">
+                    <a href="tel:+918815673626" class="flex items-center hover:text-teal-600">
+                        📞 +91 8815673626
+                    </a>
+                    <a href="mailto:gsech17@iitb.ac.in" class="flex items-center hover:text-teal-600">
+                        ✉️ gsech17@iitb.ac.in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sports" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/80 space-y-4">
+        <h4 class="font-bold text-gray-700">Sports Councillor</h4>
+        <div class="flex items-center space-x-5">
+            <img class="w-16 h-16 rounded-full object-cover cursor-pointer hover:scale-105 transition js-profile-image" src="assets/Puneet_yadav.png" alt="Profile photo of Puneet Yadav">
+            <div class="flex-grow">
+                <h3 class="font-bold text-gray-900">Puneet Yadav</h3>
+                <div class="flex items-center flex-wrap gap-x-6 gap-y-1 mt-2 text-sm text-gray-600">
+                    <a href="tel:+918871572017" class="flex items-center hover:text-teal-600">
+                        📞 +91 88715 72017
+                    </a>
+                    <a href="mailto:sportscoh17@iitb.ac.in" class="flex items-center hover:text-teal-600">
+                        ✉️ sportscoh17@iitb.ac.in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/80 space-y-4">
+        <h4 class="font-bold text-gray-700">Sports Nominee</h4>
+        <div class="flex items-center space-x-5">
+            <img class="w-16 h-16 rounded-full object-cover cursor-pointer hover:scale-105 transition js-profile-image" src="assets/Nikhil_Narera.png" alt="Profile photo of Armogan Sahab">
+            <div class="flex-grow">
+                <h3 class="font-bold text-gray-900">Armogan Sahab</h3>
+                <div class="flex items-center flex-wrap gap-x-6 gap-y-1 mt-2 text-sm text-gray-600">
+                    <a href="tel:+919079268700" class="flex items-center hover:text-teal-600">
+                        📞 +91 90792 68700
+                    </a>
+                    <a href="mailto:23b2156@iitb.ac.in" class="flex items-center hover:text-teal-600">
+                        ✉️ 23b2156@iitb.ac.in
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pt-4 mt-4 border-t border-gray-100 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="assets/Prince_Bhati.jpg" alt="Profile photo of Prince Bhati">
+                <p class="text-sm"><span class="font-semibold">Prince Bhati</span></p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="assets/Rahul_Sunda.jpg" alt="Profile photo of Rahul Sunda">
+                <p class="text-sm"><span class="font-semibold">Rahul Sunda</span></p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="assets/Anish_.jpg" alt="Profile photo of Anish Jangir">
+                <p class="text-sm"><span class="font-semibold">Anish Jangir</span></p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="assets/Ashok_Swami.jpg" alt="Profile photo of Ashok Swami">
+                <p class="text-sm"><span class="font-semibold">Ashok Swami</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="culturals" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/80 space-y-4">
+        <h4 class="font-bold text-gray-700">Cultural Councillor</h4>
+        <div class="flex items-center space-x-5">
+            <img class="w-16 h-16 rounded-full object-cover cursor-pointer hover:scale-105 transition js-profile-image" src="assets/Uddeshya_Lodhi.png" alt="Profile photo of Uddeshya Lodhi">
+            <div class="flex-grow">
+                <h3 class="font-bold text-gray-900">Uddeshya Lodhi</h3>
+                <div class="flex items-center flex-wrap gap-x-6 gap-y-1 mt-2 text-sm text-gray-600">
+                    <a href="tel:+919713773340" class="flex items-center hover:text-teal-600">
+                        📞 +91 9713773340
+                    </a>
+                    <a href="mailto:cultcoh17@iitb.ac.in" class="flex items-center hover:text-teal-600">
+                        ✉️ cultcoh17@iitb.ac.in
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/80 space-y-4">
+        <h4 class="font-bold text-gray-700">Cultural Nominee</h4>
+        <div class="flex items-center space-x-5">
+            <img class="w-16 h-16 rounded-full object-cover cursor-pointer hover:scale-105 transition js-profile-image" src="assets/Armogan_Sahab.png" alt="Profile photo of Armogan sahab">
+            <div class="flex-grow">
+                <h3 class="font-bold text-gray-900">Armogan Sahab</h3>
+                <div class="flex items-center flex-wrap gap-x-6 gap-y-1 mt-2 text-sm text-gray-600">
+                    <a href="tel:+917903025882" class="flex items-center hover:text-teal-600">
+                        📞 +91 79030 25882
+                    </a>
+                    <a href="mailto:23b2156@iitb.ac.in" class="flex items-center hover:text-teal-600">
+                        ✉️ 23b2156@iitb.ac.in
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pt-4 mt-4 border-t border-gray-100 grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="https://picsum.photos/seed/neha/40/40" alt="Profile photo of Om Biswal">
+                <p class="text-sm"><span class="font-semibold">Om Biswal</span></p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="https://picsum.photos/seed/neha/40/40" alt="Profile photo of Mayank Jain">
+                <p class="text-sm"><span class="font-semibold">Mayank Jain</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="mess" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/80 space-y-4">
+        <h4 class="font-bold text-gray-700">Mess Councillor</h4>
+        <div class="flex items-center space-x-5">
+            <img class="w-16 h-16 rounded-full object-cover cursor-pointer hover:scale-105 transition js-profile-image" src="assets/Mihir_Wani.png" alt="Profile photo of Mihir Wani">
+            <div class="flex-grow">
+                <h3 class="font-bold text-gray-900">Mihir Wani</h3>
+                <div class="flex items-center flex-wrap gap-x-6 gap-y-1 mt-2 text-sm text-gray-600">
+                    <a href="tel:+918369331688" class="flex items-center hover:text-teal-600">
+                        📞 +91 83693 31688
+                    </a>
+                    <a href="mailto:messcoh17@iitb.ac.in" class="flex items-center hover:text-teal-600">
+                        ✉️ messcoh17@iitb.ac.in
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pt-4 mt-4 border-t border-gray-100 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="assets/Meghraj_Meena.jpg" alt="Profile photo of Meghraj Meena">
+                <p class="text-sm"><span class="font-semibold">Meghraj Meena</span></p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="assets/Jishan.jpg" alt="Profile photo of Jishan">
+                <p class="text-sm"><span class="font-semibold"> Jishan </span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="maintenance" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/80 space-y-4">
+        <h4 class="font-bold text-gray-700">Maintenance Councillor</h4>
+        <div class="flex items-center space-x-5">
+            <img class="w-16 h-16 rounded-full object-cover cursor-pointer hover:scale-105 transition js-profile-image" src="assets/Yash_Asore.jpg" alt="Profile photo of Yash Asore">
+            <div class="flex-grow">
+                <h3 class="font-bold text-gray-900">Yash Asore</h3>
+                <div class="flex items-center flex-wrap gap-x-6 gap-y-1 mt-2 text-sm text-gray-600">
+                    <a href="tel:+919699606562" class="flex items-center hover:text-teal-600">
+                        📞 +91 96996 06562
+                    </a>
+                    <a href="mailto:maintcoh17@iitb.ac.in" class="flex items-center hover:text-teal-600">
+                        ✉️ maintcoh17@iitb.ac.in
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pt-4 mt-4 border-t border-gray-100 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="assets/Swaraj_Patil.jpg" alt="Profile photo of Maintenance Secretary 1">
+                <p class="text-sm"><span class="font-semibold">Swaraj Patil/span></p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="assets/Tushar_Narwade.jpg" alt="Profile photo of Maintenance Secretary 2">
+                <p class="text-sm"><span class="font-semibold">Tushar Narwade</span></p>
+            </div>
+
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="assets/Dhruv_Jadhav.jpg" alt="Profile photo of Maintenance Secretary 2">
+                <p class="text-sm"><span class="font-semibold">Dhruv Jadhav</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="tech" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/80 space-y-4">
+        <h4 class="font-bold text-gray-700">Technical Councillor</h4>
+        <div class="flex items-center space-x-5">
+            <img class="w-16 h-16 rounded-full object-cover cursor-pointer hover:scale-105 transition js-profile-image" src="assets/Kabir.png" alt="Profile photo of Nasiruddin Kabir">
+            <div class="flex-grow">
+                <h3 class="font-bold text-gray-900">Nasiruddin Kabir</h3>
+                <div class="flex items-center flex-wrap gap-x-6 gap-y-1 mt-2 text-sm text-gray-600">
+                    <a href="tel:+917029965375" class="flex items-center hover:text-teal-600">
+                        📞 +91 70299 65375
+                    </a>
+                    <a href="mailto:techcoh17@iitb.ac.in" class="flex items-center hover:text-teal-600">
+                        ✉️ techcoh17@iitb.ac.in
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pt-4 mt-4 border-t border-gray-100 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="assets/Ayushman_Soni.jpg" alt="Profile photo of Ayushman Soni">
+                <p class="text-sm"><span class="font-semibold">Ayushman Soni</span></p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="assets/Ruturaj_Chitale.jpg" alt="Profile photo of Ruturaj Chitale">
+                <p class="text-sm"><span class="font-semibold">Ruturaj Chitale</span></p>
+            </div>
+        </div>
+    </div>
+
+
+
+       <div id="tech" class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/80 space-y-4">
+        <h4 class="font-bold text-gray-700">System Administrator</h4>
+        <div class="flex items-center space-x-5">
+            <img class="w-16 h-16 rounded-full object-cover cursor-pointer hover:scale-105 transition js-profile-image" src="assets/Kaushal_Pandey.jpg" alt="Profile photo of Nasiruddin Kabir">
+            <div class="flex-grow">
+                <h3 class="font-bold text-gray-900">Kaushal Pandey</h3>
+                <div class="flex items-center flex-wrap gap-x-6 gap-y-1 mt-2 text-sm text-gray-600">
+                    <a href="tel:+917060173757" class="flex items-center hover:text-teal-600">
+                        📞 +91 70601 73757
+                    </a>
+                    <a href="mailto:sysadh17@iitb.ac.in" class="flex items-center hover:text-teal-600">
+                        ✉️ sysadh17@iitb.ac.in
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="pt-4 mt-4 border-t border-gray-100 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="assets/Anuj_Yadav.jpg" alt="Profile photo of Ayushman Soni">
+                <p class="text-sm"><span class="font-semibold">Anuj Yadav</span></p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <img class="w-8 h-8 rounded-full js-profile-image cursor-pointer" src="assets/Dhruva.jpg" alt="Profile photo of Dhruva Reddy">
+                <p class="text-sm"><span class="font-semibold">Dhruva Reddy</span></p>
+            </div>
+        </div>
+    </div>
+
+
+
+</div> <div id="imgModal" class="fixed inset-0 bg-black/70 hidden justify-center items-center z-50">
+    <img id="modalImg" class="max-w-[90%] max-h-[90%] rounded-2xl shadow-lg" />
+</div>
+
+                  
+                <!-- Responsibilities & Charters -->
+               <section class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/80">
+    <div class="flex justify-between items-center pb-4 border-b mb-6">
+        <h2 class="text-lg font-bold text-gray-800 flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 text-teal-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" /></svg>
+            Responsibilities & Charters:
+        </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-sm text-gray-700">
+        <ul class="space-y-4">
+            <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-teal-400 flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" /></svg>
+                <span>
+                    <strong class="font-semibold text-gray-800">General Secretary (GSEC):</strong> Oversees <strong>overall Council operations</strong>, manages meetings (including <strong>GBMs</strong>), policy setting, and student representation.
+                </span>
+            </li>
+            <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-teal-400 flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z" /></svg>
+                <span>
+                    <strong class="font-semibold text-gray-800">Sports Councillor (Sports Co):</strong> Coordinates <strong>Hostel Sports GC representation</strong>, organizes <strong>intra-hostel sports events</strong> and culture, and manages <strong>sports equipment inventory and gym maintenance</strong>.
+                </span>
+            </li>
+            <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-teal-400 flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" /></svg>
+                <span>
+                    <strong class="font-semibold text-gray-800">Cultural Councillor (Cult Co):</strong> Handles <strong>Hostel Cult GC representation</strong>, organizes <strong>intra-hostel cultural events</strong> and competitions, manages <strong>music room inventory</strong>, and coordinates <strong>festival celebrations</strong> in the hostel.
+                </span>
+            </li>
+            <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-teal-400 flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 012.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.532 1.532 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.532 1.532 0 01-.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" /></svg>
+                <span>
+                    <strong class="font-semibold text-gray-800">Maintenance Councillor (Maint Co):</strong> Oversees upkeep of <strong>hostel facilities</strong> (e.g., electricity, Estate, lifts), manages <strong>cleaning maintenance</strong> in and around the hostel, and handles facility reports.
+                </span>
+            </li>
+            
+        </ul>
+        <ul class="space-y-4">
+            <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-teal-400 flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" /><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" /></svg>
+                <span>
+                    <strong class="font-semibold text-gray-800">Mess Councillor (Mess Co):</strong> Oversees <strong>mess operations</strong>, <strong>curates the weekly menu</strong>, handles <strong>hygiene audits</strong>, coordinates with vendors, and organizes special events like <strong>Specials and Gala</strong>.
+                </span>
+            </li>
+            <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-teal-400 flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" /></svg>
+                <span>
+                    <strong class="font-semibold text-gray-800">Technical Councillor (Tech Co):</strong> Handles <strong>Tech GC representation</strong>, organizes <strong>intra-hostel tech competitions</strong>, and manages <strong>technical inventory</strong>.
+                </span>
+            </li>
+            <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3 text-teal-400 flex-shrink-0 mt-0.5" viewBox="0 0 20 20" fill="currentColor"><path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zm8 0a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4z" /></svg>
+                <span>
+                    <strong class="font-semibold text-gray-800">System Administrator:</strong> Manages <strong>Hostel LAN and WiFi maintenance</strong>, oversees <strong>biometric student registration</strong>, and maintains the <strong>Hostel TV system</strong>.
+                </span>
+            </li>
+        </ul>
+    </div>
+</section>
+            </div>
+        </div>
+    </main>
+
+   <footer class="bg-teal-50/70 border-t border-teal-100 mt-16">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-8">
+            <div class="col-span-1 md:col-span-4 lg:col-span-2">
+                <div class="flex items-center space-x-2">
+                    <img src="assets/LOGO_17.png" height="40" width="40" alt="Hostel 17 Logo"> 
+                    <span class="font-bold text-xl text-teal-800">Hostel-17</span>
+                </div>
+                <p class="mt-4 text-gray-600 max-w-xs">
+                    A welcoming community with vibrant sports, culturals, and academic spirit.
+                </p>
+            </div>
+            
+            <nav>
+                <h3 class="font-semibold text-gray-800">Quick Links</h3>
+                <ul class="mt-4 space-y-2">
+                    <li><a href="Home.html" class="text-gray-500 hover:text-teal-600 transition-colors">Home</a></li>
+                    <li><a href="Rules.html" class="font-bold text-teal-700 hover:text-teal-900 transition-colors">Rules & Regulations</a></li>
+                    <li><a href="Council.html" class="text-gray-500 hover:text-teal-600 transition-colors">Council</a></li>
+                    
+                    <li><a href="https://support.iitb.ac.in" target="_blank" class="text-gray-500 hover:text-teal-600 transition-colors">Institute Support</a></li>
+                    <li><a href="https://help.cc.iitb.ac.in" target="_blank" class="text-gray-500 hover:text-teal-600 transition-colors">CC Help Desk</a></li>
+                </ul>
+            </nav>
+            
+            <nav>
+                <h3 class="font-semibold text-gray-800">Services</h3>
+                <ul class="mt-4 space-y-2">
+                    <li><a href="sports.html" class="text-gray-500 hover:text-teal-600 transition-colors">Sports</a></li>
+                     <li><a href="Cult.html" class="text-gray-500 hover:text-teal-600 transition-colors">Cultural</a></li>
+                    <li><a href="Mess.html" class="text-gray-500 hover:text-teal-600 transition-colors">Mess</a></li>
+                    <li><a href="Maint.html" class="text-gray-500 hover:text-teal-600 transition-colors">Maintenance</a></li>
+                    <li><a href="Sysad.html" class="text-gray-500 hover:text-teal-600 transition-colors">LAN & Wifi Setup</a></li>
+                    <li><a href="Tech.html" class="text-gray-500 hover:text-teal-600 transition-colors">Technical</a></li>
+                </ul>
+            </nav>
+            
+            <nav class="lg:col-span-1">
+                <h3 class="font-semibold text-gray-800">Contact & Emergency</h3>
+                <ul class="mt-4 space-y-2 text-sm">
+                    <li><a href="mailto:h17hallmagr@iitb.ac.in" class="text-gray-500 hover:text-teal-600 transition-colors">Office Email (H17 Hall Manager)</a></li>
+                    <li class="mt-4 text-gray-600 font-semibold">Emergency Contacts (Ext.)</li>
+                    
+                    <li class="grid grid-cols-2 gap-2 mt-2">
+                        <span class="text-gray-500">H17 Security Desk</span>
+                        <span class="font-mono text-teal-700 font-semibold text-right">2617</span>
+                    </li>
+                    <li class="grid grid-cols-2 gap-2">
+                        <span class="text-gray-500">H17 Hall Manager</span>
+                        <span class="font-mono text-teal-700 font-semibold text-right">2717</span>
+                    </li>
+                    
+                    <li class="mt-2 text-xs text-gray-500 italic">
+                        (Dial <strong>022-2159-XXXX</strong> + Ext. from outside)
+                    </li>
+                    
+                     <li class="grid grid-cols-2 gap-2">
+                        <span class="text-gray-500">QRT</span>
+                        <span class="font-mono text-teal-700 font-semibold text-right">9167398598</span>
+                    </li>
+                    
+
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="mt-12 pt-8 border-t border-teal-200/60 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
+            <p>&copy; 2025 Hostel 17. All rights reserved.</p>
+            <p class="mt-2 sm:mt-0 text-center">
+                <span class="flex items-center space-x-1">
+                    <span>Created with ❤️ by LAN & Web Council 2025-26</span>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+    
+<script>
+    // Get modal elements
+    const modal = document.getElementById('imgModal');
+    const modalImg = document.getElementById('modalImg');
+
+    // Target ALL images with the common class 'js-profile-image'
+    const profileImages = document.querySelectorAll('.js-profile-image');
+
+    // Function to open the modal
+    const openModal = (event) => {
+        // Use event.currentTarget to reliably get the image element
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        // Set the modal image source to the clicked image's source
+        modalImg.src = event.currentTarget.src;
+    };
+
+    // Loop through the list of images and attach the click listener
+    profileImages.forEach(imgElement => {
+        // Ensure that the image is not a placeholder if its source is missing or generic (optional safety)
+        if (imgElement.tagName === 'IMG') {
+             imgElement.addEventListener('click', openModal);
+        }
+    });
+
+    // Close modal when clicking on the modal background
+    modal.onclick = () => {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+    };
+</script>
+
+</body>
+</html>

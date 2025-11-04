@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hostel 17 Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body class="bg-[#f8fafc] font-sans text-gray-800">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-lg shadow-gray-100/50 border-b border-gray-200/80">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                
+                <div class="flex items-center space-x-2">
+                    <a href="Home.html" class="flex items-center space-x-2 group">
+                        <div class="bg-teal-600 text-white w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-lg group-hover:bg-teal-700 transition-colors duration-200">
+                            <img src="assets/LOGO_17.png" class="w-8 h-8 object-cover rounded-md" alt="Hostel 17 Logo">
+                        </div>
+                        <span class="font-extrabold text-xl tracking-tight text-gray-900">Hostel-17</span>
+                    </a>
+                </div>
+                
+                <nav class="hidden lg:flex items-center space-x-1" id="desktop-nav">
+                    <a href="Home.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Home">Home</a>
+                    <a href="Council.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Council">Council</a>
+                    <a href="sports.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="sports">Sports</a>
+                    <a href="Cult.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Cult">Culturals</a>
+                    <a href="Mess.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Mess">Mess</a>
+                    <a href="Maint.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Maint">Maintenance</a>
+                    <a href="Sysad.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Sysad">LAN & Wifi Setup</a>
+                    <a href="Tech.html" class="nav-link px-3 py-2 rounded-lg text-sm font-semibold transition-colors duration-200 text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Tech">Technical</a>
+                </nav>
+
+                <button id="mobile-menu-button" class="lg:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100 transition-colors duration-200" aria-label="Toggle menu" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden lg:hidden bg-white shadow-xl border-t border-gray-100 absolute w-full left-0">
+            <div class="px-4 py-3 space-y-1">
+                <a href="Home.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Home">Home</a>
+                <a href="Council.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Council">Council</a>
+                <a href="sports.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="sports">Sports</a>
+                <a href="Cult.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Cult">Culturals</a>
+                <a href="Mess.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Mess">Mess</a>
+                <a href="Maint.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Maint">Maintenance</a>
+                <a href="Sysad.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Sysad">LAN & Wifi Setup</a>
+                <a href="Tech.html" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-700" data-page="Tech">Technical</a>
+            </div>
+        </div>
+    </header>
+
+   
+<main>
+    <section class="relative h-[450px] bg-cover bg-center" style="background-image: url('assets/hostel\ 17.webp')" aria-labelledby="hero-title">
+        <div class="absolute inset-0 bg-black/50"></div>
+
+        
+        <div class="relative container mx-auto px-6 flex justify-between items-end h-full pb-8 text-white">
+        
+            <div>
+            <h1 id="hero-title" class="text-4xl md:text-5xl font-bold tracking-tight text-shadow">Welcome to Hostel-17</h1>
+            <p class="mt-2 text-lg text-gray-200">Announcements, events, and resident services — all in one place.</p>
+            </div>
+           
+        </div>
+        <div class="absolute bottom-6 right-8 bg-black/40 text-white text-sm px-4 py-2 rounded-lg backdrop-blur-sm">
+            Est. 2022 • IIT Campus
+        </div>
+    </section>
+    
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 -mt-16 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="lg:col-span-2 space-y-8">
+                
+                <section class="bg-white p-6 rounded-xl shadow-md" aria-labelledby="events-title">
+                    <h2 id="events-title" class="text-xl font-bold text-gray-800 flex items-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                        Event Gallery
+                    </h2>
+                    
+                    <div class="grid grid-cols-3 gap-4">
+                        
+                        <div class="w-full">
+                            <img src="assets/Independence_day.png" alt="Independence Day Celebration" class="w-full h-36 object-cover rounded-lg cursor-pointer js-profile-image" />
+                            <p class="text-xs text-gray-600 text-center mt-1"><strong>Independence Day Celebration</strong></p>
+                        </div>
+                        <div class="w-full">
+                            <img src="assets/HostelOrientation.png" alt="Hostel Orientation" class="w-full h-36 object-cover rounded-lg cursor-pointer js-profile-image" />
+                            <p class="text-xs text-gray-600 text-center mt-1"><strong>Hostel Orientation</strong></p>
+                        </div>
+                        <div class="w-full">
+                            <img src="assets/Ganesh-Chaturthi.png" alt="Ganesh Chaturthi" class="w-full h-36 object-cover rounded-lg cursor-pointer js-profile-image" />
+                            <p class="text-xs text-gray-600 text-center mt-1"><strong>Ganesh Chaturthi Celebration</strong></p>
+                        </div>
+                        <div class="w-full">
+                            <img src="assets/Diwali_celeb.jpg" alt="Diwali Celebration" class="w-full h-36 object-cover rounded-lg cursor-pointer js-profile-image" />
+                            <p class="text-xs text-gray-600 text-center mt-1"><strong>Diwali Celebration</strong></p>
+                        </div>
+                        <div class="w-full">
+                            <img src="assets/GCOC.png" alt="GC Opening Ceremony" class="w-full h-36 object-cover rounded-lg cursor-pointer js-profile-image" />
+                            <p class="text-xs text-gray-600 text-center mt-1"><strong>GC Opening Ceremony</strong></p>
+                        </div>
+                        <div class="w-full">
+                            <img src="assets/Swacchta Pakhwada.jpg" alt="Tech Club Workshop" class="w-full h-36 object-cover rounded-lg cursor-pointer js-profile-image" />
+                            <p class="text-xs text-gray-600 text-center mt-1"><strong>Swachhta Pakhwada</strong></p>
+                        </div>
+                        
+                    </div>
+                </section>
+                
+                <section aria-labelledby="announcements-title">
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h2 id="announcements-title" class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-2.236 9.168-5.584C18.354 1.86 19.17 1 20.243 1v10c-1.073 0-1.89.86-1.424 1.868C17.625 15.236 14.1 17.472 10 17.472H7a4.001 4.001 0 01-1.564-7.789z" /></svg>
+                            General Announcements
+                        </h2>
+                        <div class="space-y-4">
+                            
+                            <article class="flex items-start space-x-4 p-4 bg-[#E0F7FA]/50 rounded-lg border border-cyan-100 hover:shadow-md hover:border-cyan-200 transition-all duration-300">
+                                <div class="flex-shrink-0 text-cyan-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13.494M12 6.253a6 6 0 00-4.75-2.001M12 6.253a6 6 0 014.75 2.001M12 6.253v13.494" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13.494M12 6.253a6 6 0 00-4.75-2.001M12 6.253a6 6 0 014.75 2.001M12 6.253v13.494" /></svg></div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">New Facility: 6th Floor Study Room Open</h3>
+                                    <p class="text-sm text-gray-600 mt-1">We're pleased to announce that the <strong>6th Floor Study Room</strong> is now open! It is equipped with new furniture and electrical connections for a quiet study environment. Access is exclusively for residents via the biometric system.</p>
+                                    <p class="text-xs text-gray-400 mt-2">Posted October 18, 2025</p>
+                                </div>
+                            </article>
+                            
+                            <article class="flex items-start space-x-4 p-4 bg-[#E0F7FA]/50 rounded-lg border border-cyan-100 hover:shadow-md hover:border-cyan-200 transition-all duration-300">
+                                <div class="flex-shrink-0 text-cyan-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z" /></svg></div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Mandatory: Cycle Stickers & Biometric Installation</h3>
+                                    <p class="text-sm text-gray-600 mt-1">All residents must collect cycle stickers (compulsory for cycle owners) and complete <strong>biometric installation</strong> (mandatory for common room access). Please follow the schedule provided.</p>
+                                    <p class="text-xs text-gray-400 mt-2">Posted August 24, 2025</p>
+                                </div>
+                            </article>
+                            
+                            <article class="flex items-start space-x-4 p-4 bg-[#E0F7FA]/50 rounded-lg border border-cyan-100 hover:shadow-md hover:border-cyan-200 transition-all duration-300">
+                                <div class="flex-shrink-0 text-cyan-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 00-2 2v3a2 2 0 002 2m0-6a2 2 0 012 2v3a2 2 0 01-2 2m-3 7h6" /><path stroke-linecap="round" stroke-linejoin="round" d="M18 10a2 2 0 00-2-2h-4a2 2 0 00-2 2v6a2 2 0 002 2h4a2 2 0 002-2v-6z" /></svg></div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">PHO Cycle Segregation Drive & Strict Deadline</h3>
+                                    <p class="text-sm text-gray-600 mt-1">The Public Health Office (PHO) is conducting a scrap cycle drive. Claim your cycle by putting a sticker on it before <strong>September 23, 2025</strong>. Unclaimed cycles will be removed by PHO without extension.</p>
+                                    <p class="text-xs text-gray-400 mt-2">Posted September 23, 2025</p>
+                                </div>
+                            </article>
+                            
+                            <article class="flex items-start space-x-4 p-4 bg-[#E0F7FA]/50 rounded-lg border border-cyan-100 hover:shadow-md hover:border-cyan-200 transition-all duration-300">
+                                <div class="flex-shrink-0 text-cyan-600"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 19V6a2 2 0 012-2h10a2 2 0 012 2v13M5 19h14M5 19h14M8 11h3m-3 4h3m-3 4h3m-3 4h3" /></svg></div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Room Allocation Complete & Shifting Guidelines</h3>
+                                    <p class="text-sm text-gray-600 mt-1">Room allocation is complete. Check with the Hall Manager for the list. Shifting is allowed, but remember to bring one passport-size photo and fill out the room vacate form from your previous hostel beforehand.</p>
+                                    <p class="text-xs text-gray-400 mt-2">Posted July 16, 2025</p>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="space-y-8">
+                
+                <section class="bg-white p-6 rounded-xl shadow-md" aria-labelledby="facilities-title">
+                    <h2 id="facilities-title" class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h16M4 18h16" /></svg>
+                        Hostel Facilities
+                    </h2>
+                    
+                    <div class="grid grid-cols-2 gap-4 text-sm text-gray-700">
+                        
+                        <div class="col-span-2">
+                            <img src="assets/Study_Room.jpg" alt="6th Floor Study Room" class="w-full h-24 object-cover rounded-lg mb-2 cursor-pointer js-profile-image" />
+                            <p class="text-xs text-gray-600"><strong>Study Rooms:</strong> Two dedicated quiet spaces: 6th Floor (newly opened) and 3rd Floor.</p>
+                        </div>
+                        
+                        <div class="col-span-1">
+                            <img src="assets/TV_Room.jpg" alt="TV Room" class="w-full h-20 object-cover rounded-lg mb-2 cursor-pointer js-profile-image" />
+                            <p class="text-xs text-gray-600"><strong>TV Room:</strong> Common room for entertainment and screenings.</p>
+                        </div>
+
+                        <div class="col-span-1">
+                            <img src="assets/Laundry.jpg" alt="Laundry Room" class="w-full h-20 object-cover rounded-lg mb-2 cursor-pointer js-profile-image" />
+                            <p class="text-xs text-gray-600"><strong>Laundry & Ironing:</strong> Paid service and a separate ironing room.</p>
+                        </div>
+
+                        <div class="col-span-1">
+                            <img src="assets/Lobby.png" alt="Lobby Area" class="w-full h-20 object-cover rounded-lg mb-2 cursor-pointer js-profile-image" />
+                            <p class="text-xs text-gray-600"><strong>Lobby Area:</strong> Ideal for guests or casual seating near the entrance.</p>
+                        </div>
+
+                        <div class="col-span-1">
+                            <img src="assets/Newspaper.jpg" alt="Newspaper Stand" class="w-full h-20 object-cover rounded-lg mb-2 cursor-pointer js-profile-image" />
+                            <p class="text-xs text-gray-600"><strong>Reading Material:</strong> Standies provided with daily newspapers and magazines.</p>
+                        </div>
+                        
+                        <div class="col-span-2">
+                            <div class="flex items-start space-x-3 mt-2">
+                                <div class="flex-shrink-0 mt-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-600" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1h4a1 1 0 011 1v10a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1h4V3a1 1 0 011-1zm0 2a1 1 0 00-1 1v1a1 1 0 102 0V5a1 1 0 00-1-1zM5 7a1 1 0 00-1 1v5a1 1 0 001 1h10a1 1 0 001-1V8a1 1 0 00-1-1H5z" clip-rule="evenodd" /></svg></div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Emergency Equipment</h3>
+                                    <p class="text-xs text-gray-600">Fire extinguishers are located near the lifts on all floors. Fire alarms are clearly marked throughout the building.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <div id="imgModal" class="fixed inset-0 bg-black/70 hidden justify-center items-center z-50">
+        <img id="modalImg" class="max-w-[90%] max-h-[90%] rounded-2xl shadow-lg" />
+    </div>
+
+    
+</main>
+<footer class="bg-teal-50/70 border-t border-teal-100 mt-16">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-8">
+            <div class="col-span-1 md:col-span-4 lg:col-span-2">
+                <div class="flex items-center space-x-2">
+                    <img src="assets/LOGO_17.png" height="100" width="100" alt="Hostel 17 Logo"> 
+                    <span class="font-bold text-xl text-teal-800">Hostel-17</span>
+                </div>
+                <p class="mt-4 text-gray-600 max-w-xs">
+                    A welcoming community with vibrant sports, culturals, and academic spirit.
+                </p>
+            </div>
+            
+            <nav>
+                <h3 class="font-semibold text-gray-800">Quick Links</h3>
+                <ul class="mt-4 space-y-2">
+                    <li><a href="Home.html" class="text-gray-500 hover:text-teal-600 transition-colors">Home</a></li>
+                    <li><a href="Rules.html" class="font-bold text-teal-700 hover:text-teal-900 transition-colors">Rules & Regulations</a></li>
+                    <li><a href="Council.html" class="text-gray-500 hover:text-teal-600 transition-colors">Council</a></li>
+                    
+                    <li><a href="https://support.iitb.ac.in" target="_blank" class="text-gray-500 hover:text-teal-600 transition-colors">Institute Support</a></li>
+                    <li><a href="https://help.cc.iitb.ac.in" target="_blank" class="text-gray-500 hover:text-teal-600 transition-colors">CC Help Desk</a></li>
+                </ul>
+            </nav>
+            
+            <nav>
+                <h3 class="font-semibold text-gray-800">Services</h3>
+                <ul class="mt-4 space-y-2">
+                    <li><a href="sports.html" class="text-gray-500 hover:text-teal-600 transition-colors">Sports</a></li>
+                     <li><a href="Cult.html" class="text-gray-500 hover:text-teal-600 transition-colors">Cultural</a></li>
+                    <li><a href="Mess.html" class="text-gray-500 hover:text-teal-600 transition-colors">Mess</a></li>
+                    <li><a href="Maint.html" class="text-gray-500 hover:text-teal-600 transition-colors">Maintenance</a></li>
+                    <li><a href="Sysad.html" class="text-gray-500 hover:text-teal-600 transition-colors">LAN & Wifi Setup</a></li>
+                    <li><a href="Tech.html" class="text-gray-500 hover:text-teal-600 transition-colors">Technical</a></li>
+                </ul>
+            </nav>
+            
+            <nav class="lg:col-span-1">
+                <h3 class="font-semibold text-gray-800">Contact & Emergency</h3>
+                <ul class="mt-4 space-y-2 text-sm">
+                    <li><a href="mailto:h17hallmagr@iitb.ac.in" class="text-gray-500 hover:text-teal-600 transition-colors">Office Email (H17 Hall Manager)</a></li>
+                    <li class="mt-4 text-gray-600 font-semibold">Emergency Contacts (Ext.)</li>
+                    
+                    <li class="grid grid-cols-2 gap-2 mt-2">
+                        <span class="text-gray-500">H17 Security Desk</span>
+                        <span class="font-mono text-teal-700 font-semibold text-right">2617</span>
+                    </li>
+                    <li class="grid grid-cols-2 gap-2">
+                        <span class="text-gray-500">H17 Hall Manager</span>
+                        <span class="font-mono text-teal-700 font-semibold text-right">2717</span>
+                    </li>
+                    
+                    <li class="mt-2 text-xs text-gray-500 italic">
+                        (Dial <strong>022-2159-XXXX</strong> + Ext. from outside)
+                    </li>
+                    
+                     <li class="grid grid-cols-2 gap-2">
+                        <span class="text-gray-500">QRT</span>
+                        <span class="font-mono text-teal-700 font-semibold text-right">9167398598</span>
+                    </li>
+                    
+
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="mt-12 pt-8 border-t border-teal-200/60 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-500">
+            <p>&copy; 2025 Hostel 17. All rights reserved.</p>
+            <p class="mt-2 sm:mt-0 text-center">
+                <span class="flex items-center space-x-1">
+                    <span>Created with ❤️ by LAN & Web Council 2025-26</span>
+                </span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="home.js"></script>
+     
+    <script>
+        // Get modal elements
+        const modal = document.getElementById('imgModal');
+        const modalImg = document.getElementById('modalImg');
+
+        // Target ALL images with the common class 'js-profile-image'
+        const profileImages = document.querySelectorAll('.js-profile-image');
+
+        // Function to open the modal
+        const openModal = (event) => {
+            event.stopPropagation();
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            modalImg.src = event.currentTarget.src;
+        };
+
+        // Loop through the list of images and attach the click listener
+        profileImages.forEach(imgElement => {
+            if (imgElement.tagName === 'IMG' && !imgElement.classList.contains('clickable-init')) {
+                imgElement.addEventListener('click', openModal);
+                imgElement.classList.add('clickable-init');
+                imgElement.classList.add('cursor-pointer');
+            }
+        });
+
+        // Close modal when clicking on the modal background
+        modal.onclick = () => {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        };
+    </script>
+</main>
+
+</body>
+</html>
